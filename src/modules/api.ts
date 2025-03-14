@@ -6,7 +6,8 @@
 
 import { AssignmentI, CategoryT, MemberI, RoleT } from "./types.ts";
 
-const API_BASE = "http://localhost:3000/api";
+const API_BASE =
+  "https://fe24-js2-slutprojekt-back-linn-ahlrot.onrender.com/api";
 
 export async function fetchBoard(): Promise<{
   members: MemberI[];
