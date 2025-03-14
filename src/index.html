@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="#" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script type="module" src="./main.ts"></script>
+    <title>Scrum board</title>
+  </head>
+  <body>
+    <h1>Scrum Board</h1>
+
+    <div id="form-container">
+      <form id="addMemberForm">
+        <h3>Add Member</h3>
+        <input id="memberName" placeholder="Name" required />
+        <select id="memberRoles" multiple required>
+          <option value="ux">UX Designer</option>
+          <option value="dev frontend">Frontend Developer</option>
+          <option value="dev backend">Backend Developer</option>
+        </select>
+        <button type="submit">Add Member</button>
+      </form>
+
+      <form id="addTaskForm">
+        <h3>Add Task</h3>
+        <input id="taskTitle" placeholder="Title" required />
+        <input id="taskDescription" placeholder="Description" required />
+        <select id="taskCategory">
+          <option value="ux">UX</option>
+          <option value="dev frontend">Frontend</option>
+          <option value="dev backend">Backend</option>
+        </select>
+        <button type="submit">Add Task</button>
+      </form>
+    </div>
+
+    <div id="filters-container">
+      <div class="filter-group">
+        <label for="sortTasks">Sort by:</label>
+        <select id="sortTasks">
+          <option value="timestamp-desc">Newest</option>
+          <option value="timestamp-asc">Oldest</option>
+          <option value="title-desc">A-Z</option>
+          <option value="title-asc">Z-A</option>
+        </select>
+      </div>
+
+      <div class="filter-group">
+        <label for="filterTasks">Filter by role:</label>
+        <select id="filterTasks">
+          <option value="all">All</option>
+          <option value="ux">UX Designer</option>
+          <option value="dev frontend">Frontend Developer</option>
+          <option value="dev backend">Backend Developer</option>
+        </select>
+      </div>
+
+      <div class="filter-group">
+        <label for="filterMembers">Filter by member:</label>
+        <select id="filterMembers">
+          <option value="all">All</option>
+        </select>
+      </div>
+    </div>
+
+    <div id="board">
+      <div class="column" id="newTasks">
+        <h2>New</h2>
+      </div>
+      <div class="column" id="inProgressTasks">
+        <h2>In Progress</h2>
+      </div>
+      <div class="column" id="doneTasks">
+        <h2>Done</h2>
+      </div>
+    </div>
+  </body>
+</html>
