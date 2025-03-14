@@ -12,7 +12,7 @@ A simple task management app for development teams with role-based assignments a
 
 1. Clone the repository:
    ```sh
-   git clone <repository-url>
+   git clone <https://github.com/munchkin870411/FE24-JS2-slutprojekt-front-linn-ahlrot>
    cd FE24-JS2-slutprojekt-front-linn-ahlrot
    ```
 2. Install dependencies:
@@ -22,10 +22,6 @@ A simple task management app for development teams with role-based assignments a
 3. Start the frontend:
    ```sh
    npm run dev
-   ```
-4. Start the backend (in a separate terminal):
-   ```sh
-   # Backend should run on http://localhost:3000
    ```
 
 ## Usage
